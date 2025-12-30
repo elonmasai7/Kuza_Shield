@@ -1,13 +1,13 @@
-class Threat {
-  final bool isPhishing;
-  final double confidence;
+import 'package:flutter/foundation.dart';
+import '../models/threat_model.dart';
 
-  Threat({required this.isPhishing, required this.confidence});
+class ThreatProvider extends ChangeNotifier {
+  List<Threat> _threats = [];
 
-  factory Threat.fromJson(Map<String, dynamic> json) {
-    return Threat(
-      isPhishing: json['is_phishing'] ?? json['is_threat'] ?? false,
-      confidence: (json['confidence'] as num?)?.toDouble() ?? 0.0,
-    );
+  List<Threat> get threats => _threats;
+
+  void addThreat(Map<String, dynamic> data) {
+    _threats.add(Threat.fromJson(data));  // Timestamp added in model fromJson
+    notifyListeners();
   }
 }
