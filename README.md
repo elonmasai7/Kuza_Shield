@@ -104,12 +104,6 @@ We welcome PRs! Follow:
 
 Focus areas: AI accuracy for Swahili scams, more integrations (e.g., M-Pesa), UI localization.
 
-## Roadmap
-
-- Q1 2026: Multi-language support (Swahili).
-- Q2 2026: Community threat reporting.
-- Q3 2026: Enterprise version for SACCOs.
-- Ongoing: Model updates via Kenyan threat data.
 
 ## License
 
