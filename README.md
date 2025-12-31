@@ -119,7 +119,7 @@ MIT - see [LICENSE](LICENSE).
 ## Contact
 
 - GitHub: [elonmasai7](https://github.com/elonmasai7)
-- Email: elonmasai7@tutamail.com
+- Email: elonmasai@tutamail.com
 - Issues: [Open Ticket](https://github.com/elonmasai7/Kuza_Shield/issues)
 
 Stay protected in the digital savannah! 🇰🇪 
