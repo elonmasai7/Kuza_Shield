@@ -28,7 +28,6 @@ Built on insights from Kenya's cyber landscape (e.g., 842 million threats in Q3 
 |---------------|---------------|------------------|-----------|
 | ![Home](screenshots/home.png) | ![Scanner](screenshots/scanner.png) | ![Education](screenshots/education.png) | ![Analytics](screenshots/analytics.png) |
 
-(Replace with actual screenshots in repo.)
 
 ## Technology Stack
 
