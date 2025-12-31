@@ -3,8 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 import logging
+import firebase_admin  # Added
+from firebase_admin import credentials  # Added
 
 load_dotenv()
+
+# Initialize Firebase Admin  # Added
+cred = credentials.Certificate(os.getenv('FIREBASE_CREDENTIALS_PATH'))
+firebase_admin.initialize_app(cred)
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -19,7 +25,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow frontend origins in production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
